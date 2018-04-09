@@ -1,0 +1,7 @@
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\bin\Debug\netcoreapp1.1\CoinbaseConnector.deps.json
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\bin\Debug\netcoreapp1.1\CoinbaseConnector.dll
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\bin\Debug\netcoreapp1.1\CoinbaseConnector.pdb
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\obj\Debug\netcoreapp1.1\CoinbaseConnector.AssemblyInfo.cs
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\obj\Debug\netcoreapp1.1\CoinbaseConnector.dll
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\obj\Debug\netcoreapp1.1\CoinbaseConnector.pdb
+C:\Users\Kamil\Desktop\Coins\CoinbaseConnector\obj\Debug\netcoreapp1.1\CoinbaseConnector.csprojResolveAssemblyReference.cache

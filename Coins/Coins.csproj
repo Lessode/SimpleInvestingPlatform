@@ -1,0 +1,204 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\colors\theme-color-1.css" />
+    <Content Include="wwwroot\css\colors\theme-color-10.css" />
+    <Content Include="wwwroot\css\colors\theme-color-2.css" />
+    <Content Include="wwwroot\css\colors\theme-color-3.css" />
+    <Content Include="wwwroot\css\colors\theme-color-4.css" />
+    <Content Include="wwwroot\css\colors\theme-color-5.css" />
+    <Content Include="wwwroot\css\colors\theme-color-6.css" />
+    <Content Include="wwwroot\css\colors\theme-color-7.css" />
+    <Content Include="wwwroot\css\colors\theme-color-8.css" />
+    <Content Include="wwwroot\css\colors\theme-color-9.css" />
+    <Content Include="wwwroot\css\font-awesome.min.css" />
+    <Content Include="wwwroot\css\jquery.bxslider.min.css" />
+    <Content Include="wwwroot\css\owl.carousel.min.css" />
+    <Content Include="wwwroot\css\responsive-style.css" />
+    <Content Include="wwwroot\css\site.css" />
+    <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\favicon.png" />
+    <Content Include="wwwroot\favicon@2x.png" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Include="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Include="wwwroot\fonts\FontAwesome.otf" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="wwwroot\img\.DS_Store" />
+    <Content Include="wwwroot\img\01.png" />
+    <Content Include="wwwroot\img\about-img\description%402x.png" />
+    <Content Include="wwwroot\img\about-img\description.png" />
+    <Content Include="wwwroot\img\about-img\Thumbs.db" />
+    <Content Include="wwwroot\img\affiliate-img\01%402x.png" />
+    <Content Include="wwwroot\img\affiliate-img\01.png" />
+    <Content Include="wwwroot\img\affiliate-img\02%402x.png" />
+    <Content Include="wwwroot\img\affiliate-img\02.png" />
+    <Content Include="wwwroot\img\affiliate-img\03%402x.png" />
+    <Content Include="wwwroot\img\affiliate-img\03.png" />
+    <Content Include="wwwroot\img\affiliate-img\Thumbs.db" />
+    <Content Include="wwwroot\img\banner-slider-img\.DS_Store" />
+    <Content Include="wwwroot\img\banner-slider-img\rocket%402x.png" />
+    <Content Include="wwwroot\img\banner-slider-img\rocket.png" />
+    <Content Include="wwwroot\img\banner-slider-img\Thumbs.db" />
+    <Content Include="wwwroot\img\Bitcoin-256.png" />
+    <Content Include="wwwroot\img\blog-img\author%402x.jpg" />
+    <Content Include="wwwroot\img\blog-img\author.jpg" />
+    <Content Include="wwwroot\img\blog-img\blog-post-01%402x.gif" />
+    <Content Include="wwwroot\img\blog-img\blog-post-01.gif" />
+    <Content Include="wwwroot\img\blog-img\blog-post-02%402x.jpg" />
+    <Content Include="wwwroot\img\blog-img\blog-post-02.jpg" />
+    <Content Include="wwwroot\img\blog-img\Thumbs.db" />
+    <Content Include="wwwroot\img\bx-controls%402x.png" />
+    <Content Include="wwwroot\img\bx-controls.png" />
+    <Content Include="wwwroot\img\bx-loader%402x.gif" />
+    <Content Include="wwwroot\img\bx-loader.gif" />
+    <Content Include="wwwroot\img\clients-img\01%402x.png" />
+    <Content Include="wwwroot\img\clients-img\01.png" />
+    <Content Include="wwwroot\img\clients-img\02%402x.png" />
+    <Content Include="wwwroot\img\clients-img\02.png" />
+    <Content Include="wwwroot\img\clients-img\03%402x.png" />
+    <Content Include="wwwroot\img\clients-img\03.png" />
+    <Content Include="wwwroot\img\clients-img\04%402x.png" />
+    <Content Include="wwwroot\img\clients-img\04.png" />
+    <Content Include="wwwroot\img\clients-img\05%402x.png" />
+    <Content Include="wwwroot\img\clients-img\05.png" />
+    <Content Include="wwwroot\img\clients-img\06%402x.png" />
+    <Content Include="wwwroot\img\clients-img\06.png" />
+    <Content Include="wwwroot\img\clients-img\07%402x.png" />
+    <Content Include="wwwroot\img\clients-img\07.png" />
+    <Content Include="wwwroot\img\clients-img\08%402x.png" />
+    <Content Include="wwwroot\img\clients-img\08.png" />
+    <Content Include="wwwroot\img\clients-img\Thumbs.db" />
+    <Content Include="wwwroot\img\contact-img\clock%402x.png" />
+    <Content Include="wwwroot\img\contact-img\clock.png" />
+    <Content Include="wwwroot\img\contact-img\envelope%402x.png" />
+    <Content Include="wwwroot\img\contact-img\envelope.png" />
+    <Content Include="wwwroot\img\contact-img\fax%402x.png" />
+    <Content Include="wwwroot\img\contact-img\fax.png" />
+    <Content Include="wwwroot\img\contact-img\Thumbs.db" />
+    <Content Include="wwwroot\img\counter-img\01%402x.png" />
+    <Content Include="wwwroot\img\counter-img\01.png" />
+    <Content Include="wwwroot\img\counter-img\02%402x.png" />
+    <Content Include="wwwroot\img\counter-img\02.png" />
+    <Content Include="wwwroot\img\counter-img\03%402x.png" />
+    <Content Include="wwwroot\img\counter-img\03.png" />
+    <Content Include="wwwroot\img\counter-img\04%402x.png" />
+    <Content Include="wwwroot\img\counter-img\04.png" />
+    <Content Include="wwwroot\img\counter-img\Thumbs.db" />
+    <Content Include="wwwroot\img\domain-search-img\.DS_Store" />
+    <Content Include="wwwroot\img\domain-search-img\01%402x.png" />
+    <Content Include="wwwroot\img\domain-search-img\01.png" />
+    <Content Include="wwwroot\img\domain-search-img\01dwa.png" />
+    <Content Include="wwwroot\img\domain-search-img\Thumbs.db" />
+    <Content Include="wwwroot\img\feature-img\.DS_Store" />
+    <Content Include="wwwroot\img\feature-img\icon-01%402x.png" />
+    <Content Include="wwwroot\img\feature-img\icon-01.png" />
+    <Content Include="wwwroot\img\feature-img\icon-02%402x.png" />
+    <Content Include="wwwroot\img\feature-img\icon-02.png" />
+    <Content Include="wwwroot\img\feature-img\icon-03%402x.png" />
+    <Content Include="wwwroot\img\feature-img\icon-03.png" />
+    <Content Include="wwwroot\img\feature-img\Thumbs.db" />
+    <Content Include="wwwroot\img\feedback-img\.DS_Store" />
+    <Content Include="wwwroot\img\feedback-img\icon-01%402x.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-01.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-02%402x.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-02.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-03%402x.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-03.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-04%402x.png" />
+    <Content Include="wwwroot\img\feedback-img\icon-04.png" />
+    <Content Include="wwwroot\img\feedback-img\Thumbs.db" />
+    <Content Include="wwwroot\img\footer-img\.DS_Store" />
+    <Content Include="wwwroot\img\footer-img\bg%402x.png" />
+    <Content Include="wwwroot\img\footer-img\bg.png" />
+    <Content Include="wwwroot\img\footer-img\Thumbs.db" />
+    <Content Include="wwwroot\img\owl-grabbing%402x.png" />
+    <Content Include="wwwroot\img\owl-grabbing.png" />
+    <Content Include="wwwroot\img\pricing-img\cloud-vps%402x.png" />
+    <Content Include="wwwroot\img\pricing-img\cloud-vps.png" />
+    <Content Include="wwwroot\img\pricing-img\dedicated%402x.png" />
+    <Content Include="wwwroot\img\pricing-img\dedicated.png" />
+    <Content Include="wwwroot\img\pricing-img\shared%402x.png" />
+    <Content Include="wwwroot\img\pricing-img\shared.png" />
+    <Content Include="wwwroot\img\pricing-img\Thumbs.db" />
+    <Content Include="wwwroot\img\raster %281%29.png" />
+    <Content Include="wwwroot\img\raster.png" />
+    <Content Include="wwwroot\img\service-img\icon-01%402x.png" />
+    <Content Include="wwwroot\img\service-img\icon-01.png" />
+    <Content Include="wwwroot\img\service-img\icon-02%402x.png" />
+    <Content Include="wwwroot\img\service-img\icon-02.png" />
+    <Content Include="wwwroot\img\service-img\icon-03%402x.png" />
+    <Content Include="wwwroot\img\service-img\icon-03.png" />
+    <Content Include="wwwroot\img\service-img\Thumbs.db" />
+    <Content Include="wwwroot\img\space-rocket-128.png" />
+    <Content Include="wwwroot\img\subscribe-img\bg%402x.png" />
+    <Content Include="wwwroot\img\subscribe-img\bg.png" />
+    <Content Include="wwwroot\img\team-img\01%402x.png" />
+    <Content Include="wwwroot\img\team-img\01.png" />
+    <Content Include="wwwroot\img\team-img\02%402x.png" />
+    <Content Include="wwwroot\img\team-img\02.png" />
+    <Content Include="wwwroot\img\team-img\03%402x.png" />
+    <Content Include="wwwroot\img\team-img\03.png" />
+    <Content Include="wwwroot\img\team-img\04%402x.png" />
+    <Content Include="wwwroot\img\team-img\04.png" />
+    <Content Include="wwwroot\img\team-img\Thumbs.db" />
+    <Content Include="wwwroot\js\bootstrap.min.js" />
+    <Content Include="wwwroot\js\custom-color-switcher.js" />
+    <Content Include="wwwroot\js\jquery-3.1.0.min.js" />
+    <Content Include="wwwroot\js\jquery.bxslider.min.js" />
+    <Content Include="wwwroot\js\jquery.counterup.min.js" />
+    <Content Include="wwwroot\js\jquery.validate.min.js" />
+    <Content Include="wwwroot\js\jquery.waypoints.min.js" />
+    <Content Include="wwwroot\js\main.js" />
+    <Content Include="wwwroot\js\owl.carousel.min.js" />
+    <Content Include="wwwroot\js\retina.min.js" />
+    <Content Include="wwwroot\js\site.js" />
+    <Content Include="wwwroot\js\site.min.js" />
+    <Content Include="wwwroot\media\audio.mp3" />
+    <Content Include="wwwroot\media\video.jpg" />
+    <Content Include="wwwroot\media\video.mp4" />
+    <Content Include="wwwroot\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HangFire" Version="1.6.12" />
+    <PackageReference Include="HangFire.Core" Version="1.6.12" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Shared\_LayoutNavigation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoinbaseConnector\CoinbaseConnector.csproj" />
+  </ItemGroup>
+
+</Project>

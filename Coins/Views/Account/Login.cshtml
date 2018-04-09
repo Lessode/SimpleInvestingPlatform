@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Login";
+} 
+<!-- Page Header Start -->
+<div id="pageHeader">
+    <div class="container">
+        <div class="section--title">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Page Title Start -->
+                    <h2>Login <span>Page</span></h2>
+                    <!-- Page Title End -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Page Breadcrumb Start -->
+                    <div class="page-header--breadcrumb">
+                        <ul class="breadcrumb">
+                            <li><a href="/">Home</a></li>
+                            <li class="active">Login</li>
+                        </ul>
+                    </div>
+                    <!-- Page Breadcrumb End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Login Area Start -->
+<div id="login">
+    <div class="container">
+        <div class="login--form">
+            <form action="/account/login" method="post">
+                <div class="form-group">
+                    <label for="loginEmail">Email address *</label>
+                    <input type="email" name="Email" class="form-control" id="loginEmail" placeholder="Email">
+                    <span class="highlight"></span>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password *</label>
+                    <input type="password" name="Password" class="form-control" id="loginPassword" placeholder="Password">
+                    <span class="highlight"></span>
+                </div>
+
+                <button type="submit" class="btn--primary btn--ripple">login</button>
+            </form>
+        </div>
+    </div>
+</div>

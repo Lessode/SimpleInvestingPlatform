@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Account";
+}
+<!-- Page Header Start -->
+<div id="pageHeader">
+    <div class="container">
+        <div class="section--title">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Page Title Start -->
+                    <h2>Withdraw <span>Page</span></h2>
+                    <!-- Page Title End -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Page Breadcrumb Start -->
+                    <div class="page-header--breadcrumb">
+                        <ul class="breadcrumb">
+                            <li>Deposit: @ViewBag.User.Deposit BTC</li>
+                            <li>Balance: @ViewBag.User.Balance BTC</li>
+                        </ul>
+                    </div>
+                    <!-- Page Breadcrumb End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Blog Area Start -->
+<div id="blog">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content Start -->
+            <div class="blog--content col-md-8">
+                <!-- Blog Post Start -->
+                <article class="blog--post">
+                    <!-- Blog Post Title Start -->
+                    <div class="blog--post-title">
+                        <h2>Withdraw your balance</h2>
+                    </div>
+                    <div class="blog--post-content">
+                        <form action="/withdraw/put" method="post">
+                            <div class="form-group">
+                                <label>Email address *</label>
+                                <input type="text" class="form-control" name="Email" placeholder="Enter the email to which you will get pay" required="required" />
+                                <span class="highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Money *</label>
+                                <input type="number" class="form-control" name="Money" placeholder="0" required="required" />
+                                <span class="highlight"></span>
+                            </div>
+                            <input type="submit" class="btn--primary btn--ripple" value="Withdraw"/>
+                        </form>
+                    </div>
+
+                    <div class="blog--post-title">
+                        <h2>Withdraws list</h2>
+                    </div>
+                    <div class="blog--post-content">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var item in ViewBag.GetWithdraws)
+                                    {
+                                        <tr>
+                                            <td>@item.Date</td>
+                                            <td>@item.Money BTC</td>
+                                            <td>@item.Email</td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Blog Post Content End -->
+                </article>
+                <!-- Blog Post End -->
+            </div>
+            <!-- Blog Content End -->
+            @Html.Partial("~/Views/Shared/_LayoutNavigation.cshtml");
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->

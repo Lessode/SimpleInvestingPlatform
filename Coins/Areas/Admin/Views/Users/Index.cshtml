@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Page Header Start -->
+<div id="pageHeader">
+    <div class="container">
+        <div class="section--title">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Page Title Start -->
+                    <h2>Admin <span>Page</span></h2>
+                    <!-- Page Title End -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Page Breadcrumb Start -->
+                    <div class="page-header--breadcrumb">
+                        <ul class="breadcrumb">
+                            <li>Hello Admin!</li>
+                        </ul>
+                    </div>
+                    <!-- Page Breadcrumb End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Blog Area Start -->
+<div id="blog">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content Start -->
+            <div class="blog--content col-md-8">
+                <!-- Blog Post Start -->
+                <article class="blog--post">
+                    <!-- Blog Post Title Start -->
+                    <div class="blog--post-title">
+                        <h2>Users list</h2>
+                    </div>
+                    <div class="blog--post-content">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Balance</th>
+                                    <th>Deposit</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var item in ViewBag.Users)
+                                    {
+                                        <tr>
+                                            <td>@item.Email</td>
+                                            <td>@item.Balance BTC</td>
+                                            <td>@item.Deposit BTC</td>
+                                            <td>
+                                                <a style="color:#444" href="/admin/users/EditUser/@item.Id">Edit</a><br />
+                                                <a style="color:#444" href="/admin/users/SetAdmin/@item.Id">Set admin</a><br />
+                                                <a style="color:#444" href="/admin/users/RemoveAdmin/@item.Id">Remove admin</a><br />
+                                                <a style="color:#444" href="/admin/users/BlockUser/@item.Id">Block</a>                                            </td>
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Blog Post Content End -->
+                </article>
+                <!-- Blog Post End -->
+            </div>
+            <!-- Blog Content End -->
+            @Html.Partial("~/Views/Shared/_AdminLayoutNavigation.cshtml");
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->

@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Account";
+}
+<!-- Page Header Start -->
+<div id="pageHeader">
+    <div class="container">
+        <div class="section--title">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Page Title Start -->
+                    <h2>Profile <span>Page</span></h2>
+                    <!-- Page Title End -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Page Breadcrumb Start -->
+                    <div class="page-header--breadcrumb">
+                        <ul class="breadcrumb">
+                            <li>Deposit: @ViewBag.User.Deposit BTC</li>
+                            <li>Balance: @ViewBag.User.Balance BTC</li>
+                        </ul>
+                    </div>
+                    <!-- Page Breadcrumb End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Blog Area Start -->
+<div id="blog">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content Start -->
+            <div class="blog--content col-md-8">
+                <!-- Blog Post Start -->
+                <article class="blog--post">
+                    <!-- Blog Post Title Start -->
+                    <div class="blog--post-title">
+                        <h2>Edit profile</h2>
+                    </div>
+                    <div class="blog--post-content">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <h3>Change profile data</h3>
+                                <form action="/account/ChangeData" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <div class="form-group">
+                                        <label>Firstname</label>
+                                        <input type="text" class="form-control" name="Firstname" value="@ViewBag.User.Firstname" placeholder="Enter your firstname" required="required" />
+                                        <span class="highlight"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Lastname</label>
+                                        <input type="text" class="form-control" name="Lastname" value="@ViewBag.User.Lastname" placeholder="Enter your lastname" required="required" />
+                                        <span class="highlight"></span>
+                                    </div>
+                                    <input type="submit" class="btn--primary btn--ripple" value="Change data" />
+                                </form>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h3>Change your password</h3>
+                                <form action="/account/ChangePassword" method="post">
+                                    @Html.AntiForgeryToken()
+                                    <div class="form-group">
+                                        <label>Old password *</label>
+                                        <input type="password" class="form-control" name="OldPassword" placeholder="Enter your old password" required="required" />
+                                        <span class="highlight"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>New password *</label>
+                                        <input type="password" class="form-control" name="Password" placeholder="Enter your new password" required="required" />
+                                        <span class="highlight"></span>
+                                    </div>
+                                    <input type="submit" class="btn--primary btn--ripple" value="Change password" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog--post-title">
+                        <h2>Tickets</h2>
+                    </div>
+                    <div class="blog--post-content">
+                        <h3>New Ticket</h3>
+                        <form action="/account/NewTicket" method="post">
+                            @Html.AntiForgeryToken()
+                            <div class="form-group">
+                                <label>Title *</label>
+                                <input type="text" class="form-control" name="Title" placeholder="Enter title" required="required" />
+                                <span class="highlight"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Message *</label>
+                                <textarea class="form-control" rows="5" name="Message" id="Message" required="required"></textarea>
+                                <span class="highlight"></span>
+                            </div>
+                            <input type="submit" class="btn--primary btn--ripple" value="Send" />
+                        </form>
+                        <h3>Tickets list</h3>
+                        <div class="list-group">
+                            @{
+                                foreach (var item in ViewBag.Tickets)
+                                {
+                                    <a style="color:#444" href="/account/ticket/@item.TicketId" class="list-group-item">@item.Title <br /><br /> <i>@item.Date</i></a>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <!-- Blog Post Content End -->
+                </article>
+                <!-- Blog Post End -->
+            </div>
+            <!-- Blog Content End -->
+            @Html.Partial("~/Views/Shared/_LayoutNavigation.cshtml");
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->

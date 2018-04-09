@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Account";
+}
+<!-- Page Header Start -->
+<div id="pageHeader">
+    <div class="container">
+        <div class="section--title">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Page Title Start -->
+                    <h2>User <span>Page</span></h2>
+                    <!-- Page Title End -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Page Breadcrumb Start -->
+                    <div class="page-header--breadcrumb">
+                        <ul class="breadcrumb">
+                            <li>Deposit: @ViewBag.User.Deposit BTC</li>
+                            <li>Balance: @ViewBag.User.Balance BTC</li>
+                        </ul>
+                    </div>
+                    <!-- Page Breadcrumb End -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Blog Area Start -->
+<div id="blog">
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content Start -->
+            <div class="blog--content col-md-8">
+                <!-- Blog Post Start -->
+                <article class="blog--post">
+                    <!-- Blog Post Title Start -->
+                    <div class="blog--post-title">
+                        <h2>You earned of alltime @ViewBag.Earnings BTC!</h2>
+                    </div>
+                    <!-- Blog Post Title End -->
+                    <!-- Blog Post Content Start -->
+                    <div class="blog--post-content">
+                        <label>Your refferal link</label>   
+                        <input type="text" disabled="disabled" class="form-control" name="Lastname" value='http://nazwadomeny.pl/account/register/@ViewBag.User.Id'/>       
+                    </div>
+                    <!-- Blog Post Content End -->
+                </article>
+                <!-- Blog Post End -->
+            </div>
+            <!-- Blog Content End -->
+            @Html.Partial("~/Views/Shared/_LayoutNavigation.cshtml");
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->
